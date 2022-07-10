@@ -8,7 +8,7 @@ import 'dotenv/config'
 
 const seedDataBase = async () => { 
   try {
-    await mongoose.connect(process.env.mongoURL)
+    await mongoose.connect(process.env.DB_URI)
     await mongoose.connection.db.dropDatabase()
     const users = await User.create(userData)
     const citiesWithOwner = citiesData.map(city => { 

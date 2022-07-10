@@ -14,7 +14,7 @@ export const secureRoute = async (req, res, next) => {
     console.log('token', token)
 
   
-    const payload = jwt.verify(token, process.env.secret)
+    const payload = jwt.verify(token, process.env.SECRET)
     console.log('paylod-->', payload)
 
     const userToVerify = await User.findById(payload.sub)

@@ -23,7 +23,7 @@ export const userLogin = async (req, res) => {
     const { email, password } = req.body
     const userToLogin = await User.findOne({ email: email })
     if (!userToLogin || !userToLogin.validatePassword(password)) throw new Error()
-    const token = jwt.sign({ sub: userToLogin._id }, process.env.secret, { expiresIn: '5h' })
+    const token = jwt.sign({ sub: userToLogin._id }, process.env.SECRET, { expiresIn: '5h' })
     console.log('token ->', token)
 
     return res.status(200).json({ message: `Welcome back ${userToLogin.username}`, token: token })

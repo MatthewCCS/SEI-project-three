@@ -2,7 +2,11 @@ import express from 'express'
 import mongoose from 'mongoose'
 import router from './config/router.js'
 import 'dotenv/config'
-// import cors from 'cors'
+import path, { dirname } from 'path'
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 const logger = (req, res, next) => { 
   console.log(`Incoming request on ${req.method} - ${req.url} `)
@@ -15,10 +19,15 @@ const startServer = async () => {
 
   app.use(logger)
   app.use(express.json())
-  // app.use(cors())
   app.use('/api', router)
 
-  await mongoose.connect(process.env.mongoURL)
+  app.use(express.static(path.join(__dirname, 'client', 'build')))
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
+})
+
+  await mongoose.connect(process.env.DB_URI)
   app.listen(process.env.PORT, () => console.log(`PORT listening on Port ${process.env.PORT}`))
 }
 
