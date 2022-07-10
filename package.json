@@ -4,6 +4,9 @@
   "description": "abdallah <<<<<<< HEAD matthew =======",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed": "node db/seeds.js",
