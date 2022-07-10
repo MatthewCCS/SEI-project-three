@@ -9,8 +9,7 @@
     "seed": "node db/seeds.js",
     "dev": "nodemon index.js",
     "start": "serve -s build",
-    "build": "react-scripts build",
-    "heroku-postbuild": "npm run build"
+    "build": "react-scripts build"
   },
   "repository": {
     "type": "git",
