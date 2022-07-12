@@ -6,7 +6,7 @@
 
 ## Overview
 
-The third of four projects on the Software Engineering Immersive course at General Assembly. Teamed up with [NicholasBotorog](https://github.com/NicholasBotorog) & [cencorroll](https://github.com/cencorroll) to create a fullstack MERN application.
+The third of four projects on the Software Engineering Immersive course at General Assembly. I teamed up with [NicholasBotorog](https://github.com/NicholasBotorog) & [cencorroll](https://github.com/cencorroll) to create a fullstack MERN application.
 
 Link to deployed project [Europe Travel Guide](#)  
 
@@ -94,26 +94,21 @@ Europe Travel Guide App allows users to search european city destinations and fi
 
 ## Development Reflections
 
-Challenges
+### Challenges  
+
 We wanted to try a different CSS framework and opted for TailwindCSS but couldn’t quite get it working properly with React so we had to revert to bootstrap, a framework we are more comfortable working with given the time restraints.
 In hindsight, having multiple subschemas probably wasn’t the best way to do things as there were quite a few issues trying to access certain information.
 Initial Git usage. 
 Would sometimes forget to swap to the feature branch and end up making changes on the development branch.
 Dealing with merge conflicts
 
-Wins
+### Wins  
 First group project where we had to properly utilise Git to distribute workload. Managing and dealing with merges and conflicts definitely improved communication and understanding how to work better with each other.
 Having being able to search through our database to find a specific city
 Overall, we worked very well as a team and I feel we did manage to achieve what we set out to do even if it is lacking a little polish. 
 
-### Dev Journal
+## Dev Journal
 
-<details>
-
-<summary>click</summary>  
-
-
- 
 ### Approach
 
 Work on backend first then on frontend
@@ -197,7 +192,6 @@ Our last day had some issues, after our final merge into the development branch,
 **update*  
 We haven’t changed any code but our app seems more responsive now, though the carousels still need a few clicks in order to click through to the items. We have no more time to troubleshoot this bug so will proceed with finalising the styling.
 
-</details>
 
 
 ## Potential future updates
