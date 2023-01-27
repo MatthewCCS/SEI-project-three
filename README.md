@@ -8,7 +8,7 @@
 
 The third of four projects on the Software Engineering Immersive course at General Assembly. I teamed up with [NicholasBotorog](https://github.com/NicholasBotorog) & [cencorroll](https://github.com/cencorroll) to create a fullstack MERN application.
 
-Link to deployed project [Europe Travel Guide](#)  
+Link to deployed project [Europe Travel Guide](https://europetravelguide.herokuapp.com/)  
 
 ## Table of Contents
 
