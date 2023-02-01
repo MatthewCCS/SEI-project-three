@@ -1,7 +1,7 @@
 {
-  "name": "SEI-project-three",
+  "name": "europe-travel-guide-api",
   "version": "1.0.0",
-  "description": "abdallah <<<<<<< HEAD matthew =======",
+  "description": "EuropeTravelGuideApi",
   "main": "index.js",
   "type": "module",
   "engines": {
