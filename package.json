@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cencorroll/project-three.git"
+    "url": "git+https://github.com/MatthewCCS/SEI-project-three.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cencorroll/project-three/issues"
+    "url": "https://github.com/MatthewCCS/SEI-project-three/issues"
   },
-  "homepage": "https://github.com/cencorroll/project-three#readme",
+  "homepage": "https://github.com/MatthewCCS/SEI-project-three#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
