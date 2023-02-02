@@ -1,6 +1,6 @@
 import express from 'express'
 import mongoose from 'mongoose'
-import router from './config/router.js'
+import router from './server/config/router.js'
 import 'dotenv/config'
 import path, { dirname } from 'path'
 import { fileURLToPath } from 'url'

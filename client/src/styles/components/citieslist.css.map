@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAA;EACR,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,IAAI;CAcjB;;AAhBD,AAGE,UAHQ,CAGR,KAAK,CAAA;EACH,UAAU,EAAE,aAAa;CAQ1B;;AAZH,AAKI,UALM,CAGR,KAAK,GAEF,CAAC,CAAA;EACA,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,IAAI;CACZ;;AARL,AASI,UATM,CAGR,KAAK,CAMH,KAAK,CAAA;EACH,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,kBAAe;CACxC;;AAXL,AAaE,UAbQ,CAaR,KAAK,AAAA,MAAM,CAAA;EACT,SAAS,EAAE,WAAW;CACvB",
-    "sources": [
-        "citieslist.scss"
-    ],
-    "names": [],
-    "file": "citieslist.css"
-}
+{"version":3,"sources":["citieslist.scss","citieslist.css"],"names":[],"mappings":"AAAA;EACE,mBAAA;EACA,gBAAA;ACCF;ADAE;EACE,0BAAA;ACEJ;ADDI;EACE,qBAAA;EACA,WAAA;ACGN;ADDI;EACE,0CAAA;ACGN;ADAE;EACE,sBAAA;ACEJ","file":"citieslist.css"}

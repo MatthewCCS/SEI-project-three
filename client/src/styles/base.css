@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,13 +11,8 @@ img {
 }
 
 .site-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -36,43 +30,26 @@ img {
   border-radius: 30px;
   height: 400px;
   max-width: 100%;
-  max-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-
 .randomImg .randomImgText {
   font-size: 2.5em;
   color: white;
+  text-decoration: none;
 }
 
 .search {
   max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .search .search-bar {
   width: 40%;
   margin-top: 25px;
@@ -90,7 +67,6 @@ img {
   overflow: hidden;
   margin-bottom: 20px;
 }
-
 .city-hero .card-header {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -100,79 +76,206 @@ img {
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
 }
-
 .city-hero .card-img {
   height: 50vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .city-hero .city-control {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
+}
+.city-hero .btn {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border: 1px solid rgb(204, 204, 204);
+  color: white;
+  border-radius: 10px;
 }
 
 .form-page {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  padding-top: 50px;
+  flex-grow: 1;
   background-color: grey;
 }
-
 .form-page form {
   border-radius: 8px;
   background: white;
   padding: 30px;
-  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
 }
-
 .form-page form h1 {
   font-size: 1.6rem;
 }
-
 .form-page form label {
   font-weight: bold;
   font-size: 0.9rem;
 }
-
 .form-page form .input {
   display: block;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
   margin-bottom: 10px;
+  padding: 4px;
 }
-
 .form-page form p {
   font-size: 0.8rem;
   margin: -5px 0 10px;
 }
 
-.get-one-row {
-  border: 1px solid grey;
-  border-radius: 30px;
+input[type=radio] {
+  display: none;
 }
 
+.star {
+  cursor: pointer;
+  transition: color 200ms;
+}
+
+.formfield {
+  margin: 30px 30px 0;
+}
+.formfield label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.one-card {
+  border-radius: 15px;
+}
+.one-card Card.Text {
+  color: white;
+}
+
+.get-one-row {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.get-one-row .btn {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border: 1px solid rgb(204, 204, 204);
+  color: white;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+.get-one-row .card-title {
+  font-size: 2em;
+}
 .get-one-row h1 {
   text-align: center;
   margin: 10px 0;
 }
-
 .get-one-row img {
-  width: 100%;
+  max-width: 100%;
 }
-
+.get-one-row h3 {
+  font-size: 1.5em;
+  text-decoration: underline;
+  padding: 1px;
+}
 .get-one-row .info-box {
-  margin-top: 20px;
   padding: 10px;
   border: 1px solid grey;
 }
-
 .get-one-row .info-box p {
   margin-top: 5px;
 }
-/*# sourceMappingURL=base.css.map */
+.get-one-row .one-image {
+  height: 100%;
+  max-height: 70vh;
+  filter: brightness(70%);
+}
+.get-one-row .button-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.get-one-row .button-box div {
+  margin-right: 30px;
+}
+
+.carousel {
+  margin-bottom: 30px;
+}
+.carousel .carousel-img {
+  height: 250px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  border-radius: 20px;
+  filter: brightness(70%);
+}
+.carousel .caption {
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 70px;
+}
+
+.carousel-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.reviewImage {
+  width: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.form-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://www.teahub.io/photos/full/188-1888557_city-of-london-skyline-4k.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-link {
+  color: black;
+}
+
+.reviewCard {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  margin-top: 10px;
+  width: 500px;
+  margin: 0 auto;
+  padding: 15px 10px 10px 15px;
+}
+.reviewCard h2 {
+  font-size: 1.3em;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.reviewCard p {
+  padding-bottom: -10px;
+}
+
+.review-row {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=base.css.map */
