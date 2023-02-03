@@ -28,7 +28,8 @@ app.get('*', (req, res) => {
 })
 
   await mongoose.connect(process.env.DB_URI)
-  app.listen(process.env.PORT, () => console.log(`PORT listening on Port ${process.env.PORT}`))
+  app.listen(process.env.PORT, () => console.log(`connected to MongoDB
+  PORT listening on Port ${process.env.PORT}`))
 }
 
 startServer()
