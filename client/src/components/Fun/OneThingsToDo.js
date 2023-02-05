@@ -74,7 +74,7 @@ const GetFun = () => {
                         <h2>By {review.name}</h2>
                         <p>{review.text}</p>
                       </div>
-                      <img variant="top" src={review.image} className='reviewImage' />
+                      <Card.Img variant="top" src={review.image} className='reviewImage' />
                     </Card>
                   )
                 })}
