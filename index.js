@@ -19,6 +19,7 @@ const startServer = async () => {
 
   app.use(logger)
   app.use(express.json())
+  //router
   app.use('/api', router)
 
   app.use(express.static(path.join(__dirname, 'client', 'build')))
