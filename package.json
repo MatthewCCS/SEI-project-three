@@ -12,7 +12,7 @@
     "seed": "node db/seeds.js",
     "serve": "nodemon index.js",
     "start": "node index.js",
-    "render-postbuild": "cd ../client && npm install --only=dev && npm install && npm run build"
+    "render-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "repository": {
     "type": "git",
