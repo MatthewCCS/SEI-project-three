@@ -43,7 +43,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://europetravelguide-api.onrender.com",
+  "proxy": "http://localhost:5003",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "tailwindcss": "^3.2.4",
