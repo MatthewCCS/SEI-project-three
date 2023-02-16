@@ -37,7 +37,7 @@ const NewReviewHotel = () => {
     e.preventDefault()
     !userIsAuthenticated() && navigate('/login')
     try {
-      await axios.post(`/api/cities/${id}/hotels/${hotelId}/review`, formData, { 
+      await axios.post(`https://europetravelguide-api.onrender.com/api/cities/${id}/hotels/${hotelId}/review`, formData, { 
         headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}`, 
         },
       })

@@ -11,7 +11,7 @@ const Profile = () => {
   useEffect(() => {
     const getUserData = async () => {
       try {
-        const { data } = await axios.get('/api/profile')
+        const { data } = await axios.get('https://europetravelguide-api.onrender.com//api/profile')
         setUserData(data)
       } catch (error) {
         console.log(error)

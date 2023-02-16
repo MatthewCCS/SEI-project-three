@@ -24,7 +24,7 @@ const GetOneRestaurant = () => {
   useEffect(() => {
     const getRestaurant = async () => {
       try {
-        const { data } = await axios.get(`/api/cities/${id}/restaurants/${restaurantId}`)
+        const { data } = await axios.get(`https://europetravelguide-api.onrender.com/api/cities/${id}/restaurants/${restaurantId}`)
         console.log(data)
         setRestaurant(data)
       } catch (error) {

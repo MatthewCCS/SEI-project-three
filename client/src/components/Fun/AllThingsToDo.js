@@ -18,7 +18,7 @@ const AllThingsToDo = () => {
   useEffect(() => {
     const getFunList = async () => {
       try {
-        const { data } = await axios.get(`/api/cities/${id}/fun/`)
+        const { data } = await axios.get(`https://europetravelguide-api.onrender.com/api/cities/${id}/fun/`)
         console.log(data)
         setFunList(data)
         console.log('loging', data)
