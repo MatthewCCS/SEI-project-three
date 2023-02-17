@@ -24,7 +24,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const { data } = await axios.post('https://europetravelguide-api.onrender.com//api/login', formData)
+      const { data } = await axios.post('/api/login', formData)
       setTokenToLocalStorage(data.token)
       navigate('/cities')
     } catch (err) {

@@ -24,7 +24,7 @@ const Register = () => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     try {
-      await axios.post('https://europetravelguide-api.onrender.com/api/register', formData)
+      await axios.post('api/register', formData)
       navigate('/login')
     } catch (error) {
       console.log(error)
