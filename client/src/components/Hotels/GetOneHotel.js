@@ -26,7 +26,7 @@ const GetOneHotel = () => {
   useEffect(() => {
     const getHotel = async () => {
       try {
-        const { data } = await axios.get(`https://europetravelguide-api.onrender.com/api/cities/${id}/hotels/${hotelId}`)
+        const { data } = await axios.get(`/api/cities/${id}/hotels/${hotelId}`)
         console.log(data)
         setHotel(data)
       } catch (error) {

@@ -41,11 +41,11 @@ const NewReview = () => {
     e.preventDefault()
     !userIsAuthenticated() && navigate('/login')
     try {
-      await axios.post(`https://europetravelguide-api.onrender.com/api/cities/${id}/restaurants/${restaurantId}/review`, formData, { 
+      await axios.post(`/api/cities/${id}/restaurants/${restaurantId}/review`, formData, { 
         headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}`, 
         },
       })
-      navigate(`https://europetravelguide-api.onrender.com/cities/${id}/restaurants/${restaurantId}`)
+      navigate(`/cities/${id}/restaurants/${restaurantId}`)
 
     } catch (error) {
       if (error.response.data.errors) setErrors(error.response.data.errors)

@@ -26,7 +26,7 @@ const GetFun = () => {
   useEffect(() => {
     const getFun = async () => {
       try {
-        const { data } = await axios.get(`https://europetravelguide-api.onrender.com/api/cities/${id}/fun/${funId}`)
+        const { data } = await axios.get(`/api/cities/${id}/fun/${funId}`)
         console.log(data)
         setFun(data)
       } catch (error) {

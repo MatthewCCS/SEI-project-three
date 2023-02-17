@@ -21,7 +21,7 @@ const CitiesIndex = () => {
   useEffect(() => {
     const getCities = async () => {
       try {
-        const { data } = await axios.get('https://europetravelguide-api.onrender.com/api/cities')
+        const { data } = await axios.get('/api/cities')
         setCities(data)
       } catch (error) {
         console.log(error)

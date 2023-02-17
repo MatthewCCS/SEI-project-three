@@ -22,7 +22,7 @@ const CitiesShow = () => {
   useEffect(() => {
     const getCities = async () => {
       try {
-        const { data } = await axios.get(`https://europetravelguide-api.onrender.com/api/cities/${id}`)
+        const { data } = await axios.get(`/api/cities/${id}`)
         setCities(data)
         setCitiesHotels(data.hotels)
         setCitiesRestaurants(data.restaurants)

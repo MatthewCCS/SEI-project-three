@@ -36,7 +36,7 @@ const ReviewCity = () => {
     e.preventDefault()
     !userIsAuthenticated() && navigate('/login')
     try {
-      await axios.post(`https://europetravelguide-api.onrender.com/api/cities/${id}/reviews`, formData, { 
+      await axios.post(`/api/cities/${id}/reviews`, formData, { 
         headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}`, 
         },
       })

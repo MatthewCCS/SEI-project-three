@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     const getCities = async () => {
       try {
-        const { data } = await axios.get('https://europetravelguide-api.onrender.com/api/cities/')
+        const { data } = await axios.get('/api/cities/')
         setCities(data)
         console.log(data)
       } catch (error) {

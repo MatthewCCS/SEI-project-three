@@ -4,6 +4,7 @@ import router from './config/router.js'
 import 'dotenv/config'
 import path, { dirname } from 'path'
 import { fileURLToPath } from 'url'
+import cors from 'cors'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -19,6 +20,7 @@ const startServer = async () => {
 
   app.use(logger)
   app.use(express.json())
+  app.use(cors())
   //router
   app.use('/api', router)
 
