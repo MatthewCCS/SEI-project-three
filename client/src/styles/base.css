@@ -70,7 +70,6 @@ img {
 .city-hero .card-header {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.1);
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   -webkit-backdrop-filter: blur(1px);
